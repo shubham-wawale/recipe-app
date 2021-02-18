@@ -2,11 +2,9 @@ import React, { useEffect, useState } from "react";
 import logo from './logo.svg';
 import './App.css';
 import Recipe from "./Recipe";
+import {APP_ID, APP_KEY} from "./api.js"
 
 function App() {
-
-  const APP_ID = "7e4e168c";
-  const APP_KEY = "54e49ff22ea8eda4d523b9e498efd2e3";
 
   const [recipes, setRecipes] = useState([]);
   const [search, setSearch] = useState("");
